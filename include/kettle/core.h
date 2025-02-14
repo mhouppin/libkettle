@@ -84,6 +84,7 @@ static_assert(sizeof(i128) == 16, "Invalid core type size");
 #define I128_MAX ((i128)(((u128)1 << 127) - 1))
 #endif
 
+#include "kettle/core/intcast_fwd.h"
 #include "kettle/core/intcmp_fwd.h"
 
 #endif
