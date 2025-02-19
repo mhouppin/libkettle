@@ -34,6 +34,12 @@ static_assert(sizeof(usize) == sizeof(void *), "Invalid core type size");
 #define USIZE_MIN ((usize)0)
 #define USIZE_MAX ((usize)UINTPTR_MAX)
 
+#define U8_BITS 8
+#define U16_BITS 16
+#define U32_BITS 32
+#define U64_BITS 64
+#define USIZE_BITS (sizeof(usize) * 8)
+
 // Signed integer type definitions
 
 typedef int8_t i8;
@@ -61,6 +67,12 @@ static_assert(sizeof(isize) == sizeof(void *), "Invalid core type size");
 #define ISIZE_MIN ((isize)INTPTR_MIN)
 #define ISIZE_MAX ((isize)INTPTR_MAX)
 
+#define I8_BITS 8
+#define I16_BITS 16
+#define I32_BITS 32
+#define I64_BITS 64
+#define ISIZE_BITS (sizeof(isize) * 8)
+
 // Floating point type definitions
 
 typedef float f32;
@@ -82,10 +94,15 @@ static_assert(sizeof(i128) == 16, "Invalid core type size");
 #define U128_MAX (~(u128)0)
 #define I128_MIN (-(i128)(((u128)1 << 127) - 1) - 1)
 #define I128_MAX ((i128)(((u128)1 << 127) - 1))
+
+#define U128_BITS 128
+#define I128_BITS 128
 #endif
 
 #include "kettle/core/intcast_fwd.h"
 #include "kettle/core/intcmp_fwd.h"
 #include "kettle/core/intabs_fwd.h"
+#include "kettle/core/intshift_fwd.h"
+#include "kettle/core/introt_fwd.h"
 
 #endif
