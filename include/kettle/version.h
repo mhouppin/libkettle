@@ -4,7 +4,7 @@
 #include "kettle/core/defines.h"
 
 #define KETTLE_VERSION_MAJOR 0
-#define KETTLE_VERSION_MINOR 4
+#define KETTLE_VERSION_MINOR 5
 #define KETTLE_VERSION_PATCH 0
 
 #define KETTLE_VERSION \

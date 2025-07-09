@@ -104,5 +104,8 @@ static_assert(sizeof(i128) == 16, "Invalid core type size");
 #include "kettle/core/intabs_fwd.h"
 #include "kettle/core/intshift_fwd.h"
 #include "kettle/core/introt_fwd.h"
+#include "kettle/core/intbitcnt_fwd.h"
+#include "kettle/core/intbitscan_fwd.h"
+#include "kettle/core/intbitrev_fwd.h"
 
 #endif
